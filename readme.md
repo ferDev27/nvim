@@ -1,5 +1,5 @@
-Language servers:
+<h1>Language servers:</h1>
 
-npm i -g vscode-langservers-extracted
-npm install -g typescript typescript-language-server
-pip install python-lsp-server
+<p>npm i -g vscode-langservers-extracted</p>
+<p>npm install -g typescript typescript-language-server</p>
+<p>pip install python-lsp-server</p>
