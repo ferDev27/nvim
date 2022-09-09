@@ -6,7 +6,7 @@ local langservers = {
     'cssls',
     'tsserver',
     'jsonls',
-    'pylsp',
+    'pyright',
 }
 
 for _, server in ipairs(langservers) do

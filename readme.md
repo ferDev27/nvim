@@ -2,4 +2,4 @@
 
 <p>npm i -g vscode-langservers-extracted</p>
 <p>npm install -g typescript typescript-language-server</p>
-<p>pip install python-lsp-server</p>
+<p>npm i -g pyright</p>
