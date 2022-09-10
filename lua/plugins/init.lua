@@ -21,7 +21,7 @@ return require('packer').startup({
     }
 
     -- Theme
-    use { 'rose-pine/neovim' , config = "require('theme-config')" }
+    use { 'folke/tokyonight.nvim', config = "require('theme-config')"}
     use { 'kyazdani42/nvim-web-devicons' }
 
     -- Parenths and Brackets

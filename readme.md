@@ -1,5 +1,11 @@
 <h1>Language servers:</h1>
 
-<p>npm i -g vscode-langservers-extracted</p>
-<p>npm install -g typescript typescript-language-server</p>
-<p>npm i -g pyright</p>
+```bash
+npm i -g vscode-langservers-extracted
+```
+```bash
+npm install -g typescript typescript-language-server
+```
+```bash
+npm i -g pyright
+```
