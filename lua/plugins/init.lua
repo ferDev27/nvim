@@ -7,12 +7,6 @@ if fn.empty(fn.glob(install_path)) > 0 then
   vim.api.nvim_command('packadd packer.nvim')
 end
 
--- Use a protected call so we don't error out on first use
-local status_ok, packer = pcall(require, "packer")
-if not status_ok then
-	return
-end
-
 return require('packer').startup({
     function(use)
     -- Packer
@@ -72,9 +66,8 @@ return require('packer').startup({
     use { 'hrsh7th/cmp-nvim-lsp' }
     use { 'hrsh7th/cmp-buffer' }
     use { 'hrsh7th/cmp-path' }
-    use { 'hrsh7th/cmp-cmdline' }
     use { 'hrsh7th/nvim-cmp' }
-    use { 'hrsh7th/cmp-vsnip' }
+    use { 'hrsh7th/cmp-vsnip', after = 'nvim-cmp' }
     use { 'hrsh7th/vim-vsnip' }
     use { 'onsails/lspkind.nvim' }
     -- Snippets
