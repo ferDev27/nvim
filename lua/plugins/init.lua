@@ -58,7 +58,7 @@ return require('packer').startup({
           'kyazdani42/nvim-tree.lua',
           requires = 'kyazdani42/nvim-web-devicons',
           cmd = "NvimTreeToggle",
-          config = "require 'nvim-tree'.setup{}"
+          config = "require('nvim-tree').setup()"
     }
 
     -- LSP / cmp
