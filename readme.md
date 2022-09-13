@@ -1,5 +1,6 @@
-<h1>Language servers:</h1>
+<h1>Dependencies:</h1>
 
+<h2>LSP</h2>
 ```bash
 npm i -g vscode-langservers-extracted
 ```
@@ -9,8 +10,14 @@ npm install -g typescript typescript-language-server
 ```bash
 npm i -g pyright
 ```
-nvim.rest:
-jq, tidy
 
-telescope:
-fd, ripgrep
+<h2>nvim.rest</h2>
+This are optional, for better formatting output
+```bash
+sudo pacman -S jq tidy
+```
+
+<h2>telescope</h2>
+```bash
+sudo pacman -S fd ripgrep
+```
