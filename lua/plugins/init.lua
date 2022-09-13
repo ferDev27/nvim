@@ -81,6 +81,9 @@ return require('packer').startup({
     -- Terminal
     use { "akinsho/toggleterm.nvim", config = "require('toggleterm-config')" }
 
+    -- Rest client
+    use { "rest-nvim/rest.nvim", requires = { "nvim-lua/plenary.nvim" }, config = "require('rest-nvim-config')" }
+
 
     end,
     config = {

@@ -9,3 +9,8 @@ npm install -g typescript typescript-language-server
 ```bash
 npm i -g pyright
 ```
+nvim.rest:
+jq, tidy
+
+telescope:
+fd, ripgrep

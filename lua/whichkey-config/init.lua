@@ -36,6 +36,13 @@ local mappings = {
         e = {'<cmd>lua vim.diagnostic.open_float()<CR>', "Show line diagnostics"},
         q = {'<cmd>lua vim.diagnostic.setloclist()<CR>', "Show loclist"}
     },
+
+    r = {
+    name = "REST Client",
+        r = {'', 'Run'},
+        l = {'', 'Run Last'}
+        
+    }
 }
 local opts = { prefix = '<leader>' }
 wk.register(mappings, opts)
