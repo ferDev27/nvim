@@ -40,17 +40,9 @@ return require('packer').startup({
     }
 
     -- Status Line
-    use {
-      'nvim-lualine/lualine.nvim',
-      requires = { 'kyazdani42/nvim-web-devicons', opt = true },
-      event = "BufRead",
-      config = "require('lualine-config')"
-    }
-
-    -- Buffer Line
-    use {
-      'romgrk/barbar.nvim',
-      requires = {'kyazdani42/nvim-web-devicons'}
+    use { 
+        'tamton-aquib/staline.nvim',
+        config = "require('statusline-config')"
     }
 
     -- Nvim Tree
