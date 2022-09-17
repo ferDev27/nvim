@@ -26,7 +26,8 @@ require('staline').setup {
         mod_symbol      = "  ",
         lsp_client_symbol = " ",
         branch_symbol   = " ",
-        cool_symbol     = " ",       -- Change this to override default OS icon.
+        --cool_symbol     = " ",       -- Change this to override default OS icon.
+        cool_symbol     = " ",       -- Change this to override default OS icon.
         null_ls_symbol = "",          -- A symbol to indicate that a source is coming from null-ls
     },
     mode_colors = {
