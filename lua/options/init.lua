@@ -1,5 +1,10 @@
 -- Basic options
 vim.cmd('filetype plugin indent on')
+
+-- NvimTree (disable netrw at the very start of your init.lua (strongly advised)) 
+vim.g.loaded = 1
+vim.g.loaded_netrwPlugin = 1
+
 vim.o.shortmess = vim.o.shortmess .. 'c'
 vim.o.hidden = true
 vim.o.whichwrap = 'b,s,<,>,[,],h,l'
@@ -24,7 +29,7 @@ vim.o.mouse = "a"
 vim.wo.wrap = false
 vim.wo.number = true
 vim.wo.relativenumber = true
-vim.o.cursorline = true
+vim.o.cursorline = false
 vim.wo.signcolumn = "yes"
 vim.wo.colorcolumn = "81"
 vim.o.tabstop = 4
@@ -36,5 +41,7 @@ vim.o.autoindent = true
 vim.bo.autoindent = true
 vim.o.expandtab = true
 vim.bo.expandtab = true
+
+-- Status Line
 vim.opt.laststatus=2
 vim.opt.showtabline=2 
