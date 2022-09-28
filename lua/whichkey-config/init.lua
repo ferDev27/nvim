@@ -12,10 +12,18 @@ local mappings = {
     w = { ":w<cr>", "Save" },
     x = { ":bdelete<cr>", "Close" },
     E = { ":e ~/.config/nvim/init.lua<cr>", "Edit config" },
-    f = { ":Telescope find_files<cr>", "Telescope Find Files" },
-    g = { ":Telescope live_grep<cr>", "Telescope Live Grep" },
+
+    f = {
+    name = "Telescope",
+        f = { ":Telescope find_files<cr>", "Telescope Find Files" }, 
+        g = { ":Telescope live_grep<cr>", "Telescope Live Grep" },
+        r = { ":Telescope oldfiles<cr>", "Telescope Old Files" },
+        b = { ":Telescope file_browser<cr>", "Telescope File Browser" },
+    },
     e = { ":NvimTreeToggle<CR>", "Open File Explorer"},
+    
     t = {
+    name = "Terminal",
         v = { ":ToggleTerm<cr>", "Vertical Split Terminal" },
         f = { toggle_float, "Floating Terminal" },
     },

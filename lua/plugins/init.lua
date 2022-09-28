@@ -41,8 +41,9 @@ return require('packer').startup({
     -- Telescope
     use {
       'nvim-telescope/telescope.nvim',
-      requires = { { 'nvim-lua/plenary.nvim' } },
+      requires = { { 'nvim-lua/plenary.nvim' }, { "nvim-telescope/telescope-file-browser.nvim" } },
       cmd = "Telescope",
+      config = 'require("telescope").load_extension "file_browser"'
     }
 
     -- Status Line
