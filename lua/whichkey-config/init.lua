@@ -17,7 +17,7 @@ local mappings = {
     name = "Telescope",
         f = { ":Telescope find_files<cr>", "Telescope Find Files" }, 
         g = { ":Telescope live_grep<cr>", "Telescope Live Grep" },
-        r = { ":Telescope oldfiles<cr>", "Telescope Old Files" },
+        r = { ":Telescope oldfiles<cr>", "Telescope Recent Files" },
         b = { ":Telescope file_browser<cr>", "Telescope File Browser" },
     },
     e = { ":NvimTreeToggle<CR>", "Open File Explorer"},

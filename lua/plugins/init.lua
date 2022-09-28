@@ -43,7 +43,7 @@ return require('packer').startup({
       'nvim-telescope/telescope.nvim',
       requires = { { 'nvim-lua/plenary.nvim' }, { "nvim-telescope/telescope-file-browser.nvim" } },
       cmd = "Telescope",
-      config = 'require("telescope").load_extension "file_browser"'
+      config = 'require("telescope").load_extension "file_browser"',
     }
 
     -- Status Line
@@ -57,7 +57,7 @@ return require('packer').startup({
           'kyazdani42/nvim-tree.lua',
           requires = 'kyazdani42/nvim-web-devicons',
           cmd = "NvimTreeToggle",
-          config = "require('nvim-tree').setup()"
+          config = "require('nvim-tree-config')"
     }
 
     -- LSP / cmp
@@ -82,6 +82,9 @@ return require('packer').startup({
 
     -- Rest client
     use { "rest-nvim/rest.nvim", requires = { "nvim-lua/plenary.nvim" }, config = "require('rest-nvim-config')" }
+
+    -- Dashboard
+    use {'glepnir/dashboard-nvim', config = "require('dashboard-config')"}
 
 
     end,

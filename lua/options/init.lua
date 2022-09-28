@@ -1,10 +1,6 @@
 -- Basic options
 vim.cmd('filetype plugin indent on')
 
--- NvimTree (disable netrw at the very start of your init.lua (strongly advised)) 
-vim.g.loaded = 1
-vim.g.loaded_netrwPlugin = 1
-
 vim.o.shortmess = vim.o.shortmess .. 'c'
 vim.o.hidden = true
 vim.o.whichwrap = 'b,s,<,>,[,],h,l'
