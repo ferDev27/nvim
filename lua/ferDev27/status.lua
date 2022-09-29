@@ -21,14 +21,14 @@ staline.setup {
 		s = "#9ece6a",
 		S = "#9ece6a",
 		n = "#7aa2f7",
-		c = "#e0af68",
+		c = "#e059ac",
 		v = "#bb9af7",
 		V = "#bb9af7",
+		t = "#c0caf5",
 	},
 	defaults = {
 		true_colors = true,
 		line_column = " [%l/%L] :%c  ",
-		--branch_symbol = " "
         branch_symbol = " ",
         cool_symbol = " ",       -- Arch
 	},
@@ -62,14 +62,16 @@ stabline.setup {
 --staline.setup {
 --    defaults = {
 --        expand_null_ls = false,  -- This expands out all the null-ls sources to be shown
---        left_separator  = "",
---        right_separator = "",
+--        --left_separator  = "",
+--        --right_separator = "",
+--        left_separator  = "",
+--        right_separator = "",
 --        full_path       = false,
 --        line_column     = "[%l/%L] :%c 並%p%% ", -- `:h stl` to see all flags.
 --
 --        fg              = "#000000",  -- Foreground text color.
 --        bg              = "none",     -- Default background is transparent.
---        inactive_color  = "#364a82",
+--        inactive_color  = "#323752",
 --        inactive_bgcolor = "none",
 --        true_colors     = true,      -- true lsp colors.
 --        font_active     = "none",     -- "bold", "italic", "bold,italic", etc
@@ -77,8 +79,8 @@ stabline.setup {
 --        mod_symbol      = "  ",
 --        lsp_client_symbol = " ",
 --        branch_symbol   = " ",
---        --cool_symbol     = " ",       -- Mac
---        cool_symbol     = " ",       -- Arch
+--        cool_symbol     = " ",       -- Mac
+--        --cool_symbol     = " ",       -- Arch
 --        null_ls_symbol = "",          -- A symbol to indicate that a source is coming from null-ls
 --    },
 -- 	mode_colors = {
@@ -87,14 +89,27 @@ stabline.setup {
 -- 		s = "#9ece6a",
 -- 		S = "#9ece6a",
 -- 		n = "#7aa2f7",
--- 		c = "#e0af68",
+-- 		c = "#e059ac",
 -- 		v = "#bb9af7",
 -- 		V = "#bb9af7",
+--        t = "#c0caf5",
 -- 	},
+--    mode_icons = {
+-- 		i = "INSERT",
+-- 		ic = "INSERT",
+-- 		s = "INSERT",
+-- 		S = "INSERT",
+-- 		n = "NORMAL",
+-- 		c = "COMMAND",
+-- 		v = "VISUAL",
+-- 		V = "V-LINE",
+--        t = "TERMINAL",
+--        R = "REPLACE"
+--    },
 --    sections = {
---        left = { '- ', '-mode', 'left_sep_double', ' ', 'branch', ' ', 'lsp' },
+--        left = { 'right_sep_double', '-mode', 'left_sep_double', ' ', 'branch', ' ', 'lsp' },
 --        mid  = { 'file_name' },
---        right = { 'cool_symbol','right_sep_double', '-line_column' },
+--        right = { 'cool_symbol','right_sep_double', '-line_column', 'left_sep_double' },
 --    },
 --    special_table = {
 --        NvimTree = { 'NvimTree', ' ' },
