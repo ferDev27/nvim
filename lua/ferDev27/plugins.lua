@@ -36,17 +36,18 @@ return packer.startup(function(use)
     
     -- Core
     use ( { 'nvim-lua/plenary.nvim' } )
-    
-    -- Treesitter
-    use ( { 'nvim-treesitter/nvim-treesitter' } )
 
     -- Theme
+    use ( { 'p00f/nvim-ts-rainbow' } )
     use ( { 'kyazdani42/nvim-web-devicons' } )
     use ( { 'folke/tokyonight.nvim'} )
 
-    -- Parenths and Brackets
+    -- Autopairs and Surround
     use ( { 'windwp/nvim-autopairs' } )
     use ( { 'tpope/vim-surround' } )
+
+    -- Treesitter
+    use ( { 'nvim-treesitter/nvim-treesitter' } )
 
     -- Key press helper
     use ( { 'folke/which-key.nvim' } )
@@ -70,6 +71,7 @@ return packer.startup(function(use)
     use ( { 'hrsh7th/cmp-vsnip', after = 'nvim-cmp' } )
     use ( { 'hrsh7th/vim-vsnip' } )
     use ( { 'onsails/lspkind.nvim' } )
+
     -- Snippets
 
     -- Colorizer
