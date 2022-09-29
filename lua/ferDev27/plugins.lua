@@ -32,10 +32,10 @@ packer.init({
 
 return packer.startup(function(use)
     -- Packer
-    use ({ 'wbthomason/packer.nvim' })
+    use ( { 'wbthomason/packer.nvim' } )
     
     -- Core
-    use ({ 'nvim-lua/plenary.nvim' })
+    use ( { 'nvim-lua/plenary.nvim' } )
     
     -- Treesitter
     use ( { 'nvim-treesitter/nvim-treesitter' } )
