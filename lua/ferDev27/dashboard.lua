@@ -4,7 +4,7 @@ if not ok then
 end
 
 db.default_banner = {
-[[                            Welcome to ferDevs27's                                 ]],
+[[                            Welcome to ferDev27's                                  ]],
 [[                                                                                   ]],  
 [[      ___           ___           ___                                    ___       ]],     
 [[     /__/\         /  /\         /  /\          ___        ___          /__/\      ]],      
