@@ -23,7 +23,12 @@ local mappings = {
         r = { ":Telescope oldfiles<cr>", "Telescope Recent Files" },
         b = { ":Telescope file_browser<cr>", "Telescope File Browser" },
     },
-    e = { ":NvimTreeToggle<CR>", "Open File Explorer"},
+    
+    n = {
+    name = "Nvim Tree",
+        t = { ":NvimTreeToggle<CR>", "Toggle Nvim Tree"},
+        f = { ":NvimTreeFindFile<CR>", "Find File Nvim Tree"},
+    }, 
     
     t = {
     name = "Terminal",
