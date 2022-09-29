@@ -9,7 +9,7 @@ if not ok then
 end
 
 --Status line
-require "staline".setup {
+staline.setup {
 	sections = {
 		left = { '  ', 'mode', ' ', 'branch', ' ', 'lsp' },
 		mid = {},
@@ -41,7 +41,7 @@ require "staline".setup {
 }
 
 -- Buffers
-require('stabline').setup {
+stabline.setup {
 	style       = "bar", -- others: arrow, slant, bubble
 	stab_left   = "┃",
 	stab_right  = " ",
@@ -59,7 +59,7 @@ require('stabline').setup {
 }
 
 --Staline Mac
---require('staline').setup {
+--staline.setup {
 --    defaults = {
 --        expand_null_ls = false,  -- This expands out all the null-ls sources to be shown
 --        left_separator  = "",

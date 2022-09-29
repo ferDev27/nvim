@@ -1,3 +1,16 @@
-require('options')
-require('keybinds')
-require('plugins')
+require 'ferDev27.options'
+require 'ferDev27.utils'
+require 'ferDev27.keys'
+require 'ferDev27.plugins'
+require 'ferDev27.treesitter'
+require 'ferDev27.lsp'
+require 'ferDev27.theme'
+require 'ferDev27.autopairs'
+require 'ferDev27.telescope'
+require 'ferDev27.status'
+require 'ferDev27.nvimtree'
+require 'ferDev27.gitsigns'
+require 'ferDev27.term'
+require 'ferDev27.restnvim'
+require 'ferDev27.dashboard'
+require 'ferDev27.whichkey'

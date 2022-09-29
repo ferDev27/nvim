@@ -1,3 +1,8 @@
+local ok, lspconfig = pcall(require, 'lspconfig')
+if not ok then
+	return
+end
+
 -- Set up lspconfig.
 local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 
@@ -10,7 +15,7 @@ local langservers = {
 }
 
 for _, server in ipairs(langservers) do
-    require'lspconfig'[server].setup {
+    lspconfig[server].setup {
       capabilities = capabilities,
     }
 end

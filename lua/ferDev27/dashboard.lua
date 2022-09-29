@@ -1,4 +1,7 @@
-local db = require('dashboard')
+local ok, db = pcall(require, 'dashboard')
+if not ok then
+	return
+end
 
 db.default_banner = {
 [[                            Welcome to ferDevs27's                                 ]],
@@ -27,7 +30,7 @@ db.custom_center = {
     shortcut = '<leader> f r'},
     {icon = '  ',
     desc = 'Find files                              ',
-    action = 'Telescope find_files find_command=rg,--hidden,--files',
+    action = 'Telescope find_files',
     shortcut = '<leader> f f'},
     {icon = '  ',
     desc ='File browser                            ',

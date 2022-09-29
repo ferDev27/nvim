@@ -1,3 +1,13 @@
+local ok, cmp = pcall(require, 'cmp')
+if not ok then
+	return
+end
+
+local ok, lspkind = pcall(require, 'lspkind')
+if not ok then
+	return
+end
+
 vim.g.completeopt="menu,menuone,noselect,noinsert"
 
 local has_words_before = function()
@@ -9,11 +19,7 @@ local feedkey = function(key, mode)
   vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes(key, true, true, true), mode, true)
 end
 
--- Set up nvim-cmp.
-  local cmp = require'cmp'
-  local lspkind = require('lspkind')
-
-  cmp.setup({
+cmp.setup({
     snippet = {
       expand = function(args)
         vim.fn["vsnip#anonymous"](args.body) -- For `vsnip` users.
@@ -82,5 +88,5 @@ end
     sources = {
       { name = 'buffer' }
     }
-  })
+})
 
