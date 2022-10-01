@@ -57,7 +57,10 @@ return packer.startup(function(use)
     use ( { 'nvim-telescope/telescope-file-browser.nvim' } )
 
     -- Status Line
-    use ( { 'tamton-aquib/staline.nvim' } )
+    use ( { 'nvim-lualine/lualine.nvim' } )
+    
+    -- Bufferline
+    use ( {'akinsho/bufferline.nvim' } )
 
     -- Nvim Tree
     use ( { 'kyazdani42/nvim-tree.lua' } )
