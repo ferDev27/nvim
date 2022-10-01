@@ -31,7 +31,7 @@ bufferline.setup {
                 filetype = "NvimTree",
                 text = "File Explorer", --| function ,
                 text_align = "left", --| "center" | "right"
-                separator = true,
+                separator = false,
             }
         },
         color_icons = true, --| false, -- whether or not to add the filetype icon highlights
