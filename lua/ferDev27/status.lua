@@ -30,7 +30,8 @@ staline.setup {
 		true_colors = true,
 		line_column = " [%l/%L] :%c  ",
         branch_symbol = " ",
-        cool_symbol = " ",       -- Arch
+        --cool_symbol = " ",       -- Arch
+        --cool_symbol     = " ",       -- Mac
 	},
     lsp_symbols = { 
         Error="  ", 
