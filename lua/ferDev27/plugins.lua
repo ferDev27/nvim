@@ -38,7 +38,6 @@ return packer.startup(function(use)
     use ( { 'nvim-lua/plenary.nvim' } )
 
     -- Theme
-    use ( { 'p00f/nvim-ts-rainbow' } )
     use ( { 'kyazdani42/nvim-web-devicons' } )
     use ( { 'folke/tokyonight.nvim'} )
 
@@ -48,6 +47,7 @@ return packer.startup(function(use)
 
     -- Treesitter
     use ( { 'nvim-treesitter/nvim-treesitter' } )
+    use ( { 'p00f/nvim-ts-rainbow', require="nvim-treesitter" } )
 
     -- Key press helper
     use ( { 'folke/which-key.nvim' } )
