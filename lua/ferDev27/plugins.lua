@@ -47,7 +47,7 @@ return packer.startup(function(use)
 
     -- Treesitter
     use ( { 'nvim-treesitter/nvim-treesitter' } )
-    use ( { 'p00f/nvim-ts-rainbow', require="nvim-treesitter" } )
+    use ( { 'p00f/nvim-ts-rainbow', after="nvim-treesitter" } )
 
     -- Key press helper
     use ( { 'folke/which-key.nvim' } )
