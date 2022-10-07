@@ -14,6 +14,11 @@ npm install -g typescript typescript-language-server
 npm i -g pyright
 ```
 
+```bash
+brew install rust-analyzer
+sudo pacman -S rust-analyzer
+```
+
 <h2>nvim.rest</h2>
 This are optional, for better formatting output:<br>
 
