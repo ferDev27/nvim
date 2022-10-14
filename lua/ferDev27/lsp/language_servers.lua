@@ -11,7 +11,6 @@ local langservers = {
     'cssls',
     'tsserver',
     'jsonls',
-    'pyright',
 }
 
 for _, server in ipairs(langservers) do
@@ -27,4 +26,16 @@ require('lspconfig')['rust_analyzer'].setup{
     settings = {
       ["rust-analyzer"] = {}
     }
+}
+
+require('lspconfig').pylsp.setup{
+  settings = {
+    pylsp = {
+      plugins = {
+        pycodestyle = {
+          ignore = {'W391'},
+        }
+      }
+    }
+  }
 }

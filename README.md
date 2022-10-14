@@ -11,7 +11,7 @@ npm install -g typescript typescript-language-server
 ```
 
 ```bash
-npm i -g pyright
+pip install "python-lsp-server[all]"
 ```
 
 ```bash

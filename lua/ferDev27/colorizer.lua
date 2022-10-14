@@ -7,5 +7,5 @@ colorizer.setup ({
     'css';
     'javascript'; 
     'html';
-}, { mode = 'foreground' })
+}, { mode = 'background' })
 
