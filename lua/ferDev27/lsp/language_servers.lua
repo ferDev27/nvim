@@ -3,8 +3,8 @@ if not ok then
 	return
 end
 
--- Set up lspconfig.
-local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
+-- Html, css, javascript/typescript, json
+local capabilities = require('cmp_nvim_lsp').default_capabilities(vim.lsp.protocol.make_client_capabilities())
 
 local langservers = {
     'html',
@@ -19,6 +19,20 @@ for _, server in ipairs(langservers) do
     }
 end
 
+-- Python
+require('lspconfig').pylsp.setup{
+  settings = {
+    pylsp = {
+      plugins = {
+        pycodestyle = {
+          ignore = {'W391', 'W291'},
+        }
+      }
+    }
+  }
+}
+
+-- Rust
 require('lspconfig')['rust_analyzer'].setup{
     on_attach = on_attach,
     flags = lsp_flags,
@@ -28,14 +42,3 @@ require('lspconfig')['rust_analyzer'].setup{
     }
 }
 
-require('lspconfig').pylsp.setup{
-  settings = {
-    pylsp = {
-      plugins = {
-        pycodestyle = {
-          ignore = {'W391'},
-        }
-      }
-    }
-  }
-}
