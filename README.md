@@ -11,6 +11,10 @@ npm install -g typescript typescript-language-server
 ```
 
 ```bash
+npm install -g intelephense
+```
+
+```bash
 pip install "python-lsp-server[all]"
 ```
 
