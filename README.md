@@ -19,6 +19,10 @@ pip install "python-lsp-server[all]"
 ```
 
 ```bash
+sudo pacman -S clang
+```
+
+```bash
 brew install rust-analyzer
 sudo pacman -S rust-analyzer
 ```

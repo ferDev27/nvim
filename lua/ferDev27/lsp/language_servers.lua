@@ -12,6 +12,7 @@ local langservers = {
     'tsserver',
     'jsonls',
     'intelephense',
+    'clangd'
 }
 
 for _, server in ipairs(langservers) do
