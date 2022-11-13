@@ -27,7 +27,7 @@ require('lspconfig').pylsp.setup{
     pylsp = {
       plugins = {
         pycodestyle = {
-          ignore = {'W391', 'W291', 'E501'},
+          ignore = {'W391', 'W293', 'W291', 'E501'},
         }
       }
     }
