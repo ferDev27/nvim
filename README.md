@@ -41,9 +41,10 @@ sudo pacman -S fd ripgrep
 
 <h1>Installation</h1>
 You need to clone the repo:
+
 ```bash
 cd ~/.config
-git clone https://github.com/ferDev27/nvim
+git clone https://github.com/ferDev27/nvim.git
 ```
 
 Open init.lua
