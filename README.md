@@ -53,7 +53,7 @@ cd ~/.config/nvim
 nvim init.lua
 ```
 
-**Wait for the installation to finish, and you are set
+**Wait for the installation to finish, and you are set**
 
 
 
