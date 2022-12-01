@@ -1,6 +1,10 @@
-<h1>Dependencies:</h1>
+![nvim1](./screenshots/nvim_1.png)
+![nvim1](./screenshots/nvim_2.png)
 
-<h2>LSP</h2>
+<h1>Dependencies:</h1>
+In order to proceed we will need a few things
+
+<h2>LSP (Language server protocol)</h2>
 
 ```bash
 npm i -g vscode-langservers-extracted
@@ -22,20 +26,33 @@ pip install "python-lsp-server[all]"
 sudo pacman -S clang
 ```
 
-```bash
-brew install rust-analyzer
-sudo pacman -S rust-analyzer
-```
-
-<h2>nvim.rest</h2>
+<h2>Nvim.rest</h2>
 This are optional, for better formatting output:<br>
 
 ```bash
 sudo pacman -S jq tidy
 ```
 
-<h2>telescope</h2>
+<h2>Telescope</h2>
 
 ```bash
 sudo pacman -S fd ripgrep
 ```
+
+<h1>Installation</h1>
+You need to clone the repo:
+```bash
+cd ~/.config
+git clone https://github.com/ferDev27/nvim
+```
+
+Open init.lua
+```bash
+cd ~/.config/nvim
+nvim init.lua
+```
+
+**Wait for the installation to finish, and you are set
+
+
+
