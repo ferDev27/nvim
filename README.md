@@ -1,3 +1,4 @@
+<h1>My [Neovim](https://neovim.io/) configuration</h1>
 ![nvim1](./screenshots/nvim_1.png)
 ![nvim1](./screenshots/nvim_2.png)
 
