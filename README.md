@@ -2,7 +2,6 @@
 ![nvim1](./screenshots/nvim_2.png)
 
 <h1>My Neovim configuration</h1>
-**[Neovim](https://neovim.io/)**
 
 <h1>Dependencies:</h1>
 In order to proceed we will need a few things
