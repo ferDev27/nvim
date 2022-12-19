@@ -61,6 +61,9 @@ bufferline.setup {
           fg = { attribute = "fg", highlight = "TabLine" },
           bg = { attribute = "bg", highlight = "TabLine" },
         },
+        buffer_selected = {
+            italic = false,
+        },
 
         close_button = {
           fg = { attribute = "fg", highlight = "TabLine" },
@@ -74,6 +77,7 @@ bufferline.setup {
         tab_selected = {
           fg = { attribute = "fg", highlight = "Normal" },
           bg = { attribute = "bg", highlight = "Normal" },
+          italic = false,
         },
         tab = {
           fg = { attribute = "fg", highlight = "TabLine" },

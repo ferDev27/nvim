@@ -39,7 +39,7 @@ return packer.startup(function(use)
 
     -- Theme
     use ( { 'kyazdani42/nvim-web-devicons' } )
-    use ( { 'folke/tokyonight.nvim'} )
+    use ( { 'marko-cerovac/material.nvim'} )
 
     -- Autopairs and Surround
     use ( { 'windwp/nvim-autopairs' } )
@@ -47,7 +47,6 @@ return packer.startup(function(use)
 
     -- Treesitter
     use ( { 'nvim-treesitter/nvim-treesitter' } )
-    use ( { 'p00f/nvim-ts-rainbow', after="nvim-treesitter" } )
 
     -- Key press helper
     use ( { 'folke/which-key.nvim' } )
