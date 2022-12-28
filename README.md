@@ -28,13 +28,6 @@ pip install "python-lsp-server[all]"
 sudo pacman -S clang
 ```
 
-<h2>Nvim.rest</h2>
-This are optional, for better formatting output:<br>
-
-```bash
-sudo pacman -S jq tidy
-```
-
 <h2>Telescope</h2>
 
 ```bash

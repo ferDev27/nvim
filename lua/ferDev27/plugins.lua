@@ -85,9 +85,6 @@ return packer.startup(function(use)
     -- Terminal
     use ( { "akinsho/toggleterm.nvim" } )
 
-    -- Rest client
-    use ({ "rest-nvim/rest.nvim" }) 
-
     -- Dashboard
     use ( {'glepnir/dashboard-nvim' } )
 
