@@ -69,13 +69,18 @@ theme.setup({
     },
 
     custom_colors = function(colors)
+        -- Main
         colors.main.cyan = "#74bad6"
         colors.main.yellow = "#cfab65"
         colors.main.green = "#9ece6a"
         colors.main.orange = "#cf765b"
+
+        --Editor
         colors.editor.accent = "#6dd1d1"
+        colors.editor.cursor = "#c0caf5"
         --colors.editor.bg = "#0E101B"
         colors.editor.active = "#080A10"
+        colors.editor.selection = "#2b2d40"
         colors.editor.title = colors.main.purple
     end   
 })
