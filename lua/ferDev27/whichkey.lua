@@ -7,7 +7,6 @@ local mappings = {
     q = { ":q!<cr>", "Quit" },
     Q = { ":wq<cr>", "Save & Quit" },
     w = { ":w<cr>", "Save" },
-    x = { ":bdelete<cr>", "Close" },
     E = { ":e ~/.config/nvim/init.lua<cr>", "Edit config" },
     r = {"", "Quick Run"},
 
@@ -16,7 +15,7 @@ local mappings = {
         b = { ":Telescope buffers<cr>", "Show Buffers" },
         n = { ":bnext<cr>", "Next Buffer" },
         p = { ":bprevious<cr>", "Previous Buffer" },
-        c = { ":bd!<CR>", "Close Buffer" },
+        c = { ":bdelete<cr>", "Close Buffer" },
     },
 
     f = {
