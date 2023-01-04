@@ -13,3 +13,12 @@ vim.cmd([[
   augroup end
 ]])
 
+-- Autocommand that executes python, javascript and sh files
+vim.cmd [[
+    augroup quick_run
+        autocmd!
+        autocmd Filetype python nnoremap <buffer> <leader>r :w<CR>:!python %<CR>
+        autocmd Filetype javascript,typescript nnoremap <buffer> <leader>r :w<CR>:!node %<CR>
+        autocmd Filetype bash,sh nnoremap <buffer> <leader>r :w<CR>:!bash %<CR>
+    augroup end
+]]

@@ -3,25 +3,28 @@ if not status_ok then
   return
 end
 
-local Terminal = require('toggleterm.terminal').Terminal
-local toggle_float = function()
-  local float = Terminal:new({ direction = "float" })
-  return float:toggle()
-end
-
 local mappings = {
     q = { ":q!<cr>", "Quit" },
     Q = { ":wq<cr>", "Save & Quit" },
     w = { ":w<cr>", "Save" },
     x = { ":bdelete<cr>", "Close" },
     E = { ":e ~/.config/nvim/init.lua<cr>", "Edit config" },
+    r = {"", "Quick Run"},
+
+    b = {
+    name = "Buffers",
+        b = { ":Telescope buffers<cr>", "Show Buffers" },
+        n = { ":bnext<cr>", "Next Buffer" },
+        p = { ":bprevious<cr>", "Previous Buffer" },
+        c = { ":bd!<CR>", "Close Buffer" },
+    },
 
     f = {
     name = "Telescope",
-        f = { ":Telescope find_files<cr>", "Telescope Find Files" }, 
-        g = { ":Telescope live_grep<cr>", "Telescope Live Grep" },
-        r = { ":Telescope oldfiles<cr>", "Telescope Recent Files" },
-        b = { ":Telescope file_browser<cr>", "Telescope File Browser" },
+        f = { ":Telescope find_files<cr>", "Find Files" }, 
+        g = { ":Telescope live_grep<cr>", "Live Grep" },
+        r = { ":Telescope oldfiles<cr>", "Recent Files" },
+        b = { ":Telescope file_browser<cr>", "File Browser" },
     },
     
     n = {
@@ -33,7 +36,7 @@ local mappings = {
     t = {
     name = "Terminal",
         v = { ":ToggleTerm<cr>", "Vertical Split Terminal" },
-        f = { toggle_float, "Floating Terminal" },
+        f = { ":ToggleTerm direction=float<cr>", "Floating Terminal" },
     },
 
     l = {

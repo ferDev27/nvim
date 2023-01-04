@@ -25,12 +25,5 @@ map('x', 'J', ":move '>+1<CR>gv-gv", options )
 map('n', '<TAB>', ':bnext<CR>', options )
 map('n', '<S-TAB>', ':bprevious<CR>', options )
 
--- Close current buffer
-map('n', '<C-b>', ':bd!<CR>', options)
-
--- Terminal
--- Better terminal navigation
-map("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opt )
-map("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opt )
-map("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opt )
---map("t", "<C-right>", "<C-\\><C-N><C-w>l", term_opt )
+-- Exit Terminal
+map("t", "<ESC><ESC>", "<C-d>", term_opt )
