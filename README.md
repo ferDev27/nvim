@@ -1,6 +1,5 @@
 # My Neovim configuration
 ![nvim1](./screenshots/nvim_1.png)
-![nvim1](./screenshots/nvim_2.png)
 
 <h1>Dependencies:</h1>
 In order to proceed we will need a few things
