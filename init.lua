@@ -1,3 +1,11 @@
+--    __           ____             ____ _____
+--   / _| ___ _ __|  _ \  _____   _|___ \___  |
+--  | |_ / _ \ '__| | | |/ _ \ \ / / __) | / /
+--  |  _|  __/ |  | |_| |  __/\ V / / __/ / /
+--  |_|  \___|_|  |____/ \___| \_/ |_____/_/
+--
+--    GitHub: https://github.com/ferDev27
+
 require 'ferDev27.options'
 require 'ferDev27.utils'
 require 'ferDev27.keys'
