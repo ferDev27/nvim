@@ -23,7 +23,8 @@ local mappings = {
         f = { ":Telescope find_files<cr>", "Find Files" }, 
         g = { ":Telescope live_grep<cr>", "Live Grep" },
         r = { ":Telescope oldfiles<cr>", "Recent Files" },
-        b = { ":Telescope file_browser<cr>", "File Browser" },
+        b = { ":Telescope file_browser<cr>", "File browser" },
+        t = { ":lua require('material.functions').find_style()<cr>", "Theme switch" },
     },
     
     n = {

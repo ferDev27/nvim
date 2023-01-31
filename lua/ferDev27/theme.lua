@@ -50,7 +50,7 @@ theme.setup({
     disable = {
         colored_cursor = true, -- Disable the colored cursor
         borders = false, -- Disable borders between verticaly split windows
-        background = true, -- Prevent the theme from setting the background (NeoVim then uses your terminal background)
+        background = false, -- Prevent the theme from setting the background (NeoVim then uses your terminal background)
         term_colors = false, -- Prevent the theme from setting terminal colors
         eob_lines = false -- Hide the end-of-buffer lines
     },
@@ -76,12 +76,14 @@ theme.setup({
         colors.main.orange = "#cf765b"
 
         --Editor
-        colors.editor.accent = "#6dd1d1"
+        colors.editor.accent = "#6f6cd9"
         colors.editor.cursor = "#c0caf5"
-        --colors.editor.bg = "#0E101B"
-        colors.editor.active = "#080A10"
-        colors.editor.selection = "#2b2d40"
-        colors.editor.title = colors.main.purple
+        colors.editor.bg = "#15161f"
+        colors.editor.bg_alt = "#15161f"
+        colors.backgrounds.sidebars = "#13141c" 
+        colors.backgrounds.non_current_windows = "#15161f"
+        colors.editor.selection = "#232433"
+        colors.editor.title = "#7397e6"
     end   
 })
 
