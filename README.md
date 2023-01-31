@@ -1,10 +1,10 @@
 # My Neovim configuration
 ![nvim1](./screenshots/nvim_1.png)
 
-<h1>Dependencies:</h1>
+# Dependencies
 In order to proceed we will need a few things
 
-<h2>LSP (Language server protocol)</h2>
+# LSP (Language server protocol)
 
 ```bash
 npm i -g vscode-langservers-extracted
@@ -32,7 +32,7 @@ sudo pacman -S clang
 sudo pacman -S fd ripgrep
 ```
 
-<h1>Installation</h1>
+# Installation
 You need to clone the repo:
 
 ```bash
@@ -48,5 +48,14 @@ nvim init.lua
 
 **Wait for the installation to finish, and you are set**
 
+# Keybinds
+You can check/edit the keybinds here:
 
+```bash
+nvim ~/.config/nvim/lua/ferDev27/keys.lua
+```
+Also by pressing the *leader key* (`,`) it will open which-key with some extra binds, you can check/edit here:
 
+```bash
+nvim ~/.config/nvim/lua/ferDev27/whichkey.lua
+```
