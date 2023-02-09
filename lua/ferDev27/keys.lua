@@ -1,5 +1,5 @@
 -- Set leader
-vim.g.mapleader = ','
+vim.g.mapleader = ' '
 
 local map = vim.api.nvim_set_keymap
 local options = { noremap = true, silent = false }
@@ -20,10 +20,6 @@ map('v', '>', '>gv', options)
 -- shift + j to move down
 map('x', 'K', ":move '<-2<CR>gv-gv", options )
 map('x', 'J', ":move '>+1<CR>gv-gv", options )
-
--- Navigate buffers
-map('n', '<TAB>', ':bnext<CR>', options )
-map('n', '<S-TAB>', ':bprevious<CR>', options )
 
 -- Exit Terminal
 map("t", "<ESC><ESC>", "<C-d>", term_opt )

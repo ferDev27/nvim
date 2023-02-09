@@ -3,7 +3,7 @@ vim.cmd('filetype plugin indent on')
 
 vim.opt.termguicolors = true
 vim.opt.laststatus=2
-vim.opt.showtabline=2 
+vim.opt.showtabline=1 
 
 vim.o.shortmess = vim.o.shortmess .. 'c'
 vim.o.hidden = true

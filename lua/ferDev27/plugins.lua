@@ -39,7 +39,7 @@ return packer.startup(function(use)
 
     -- Theme
     use ( { 'kyazdani42/nvim-web-devicons' } )
-    use ( { 'marko-cerovac/material.nvim'} )
+    use ( { 'navarasu/onedark.nvim' } )
 
     -- Autopairs and Surround
     use ( { 'windwp/nvim-autopairs' } )
@@ -58,9 +58,6 @@ return packer.startup(function(use)
     -- Status Line
     use ( { 'nvim-lualine/lualine.nvim' } )
     
-    -- Bufferline
-    use ( {'akinsho/bufferline.nvim' } )
-
     -- Nvim Tree
     use ( { 'kyazdani42/nvim-tree.lua' } )
 
