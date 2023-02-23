@@ -21,5 +21,6 @@ map('v', '>', '>gv', options)
 map('x', 'K', ":move '<-2<CR>gv-gv", options )
 map('x', 'J', ":move '>+1<CR>gv-gv", options )
 
--- Exit Terminal
+-- Terminal
 map("t", "<ESC><ESC>", "<C-d>", term_opt )
+map("t", "<ESC>", "<C-\\><C-N>", term_opt )

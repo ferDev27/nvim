@@ -4,8 +4,9 @@ if not ok then
 end
 
 colorizer.setup ({
-    'css';
-    'javascript'; 
-    'html';
+  'css';
+  'javascript'; 
+  'html';
+  'json';
 }, { mode = 'background' })
 

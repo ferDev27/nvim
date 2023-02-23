@@ -9,7 +9,7 @@ local mappings = {
         b = { ":Telescope buffers<cr>", "Show Buffers" },
         n = { ":bnext<cr>", "Next Buffer" },
         p = { ":bprevious<cr>", "Previous Buffer" },
-        k = { ":bdelete<cr>", "Kill Buffer" },
+        k = { ":bdelete!<cr>", "Kill Buffer" },
     },
 
     f = {
@@ -28,8 +28,12 @@ local mappings = {
     
     o = {
     name = "Open",
-        T = { ":ToggleTerm<cr>", "Vertical Split Terminal" },
-        t = { ":ToggleTerm direction=float<cr>", "Floating Terminal" },
+      t = {
+        name = "Terminal",
+        t = { ":term<cr>", "Terminal" },
+        s = { ":ToggleTerm<cr>", "Vertical Split Terminal" },
+        f = { ":ToggleTerm direction=float<cr>", "Floating Terminal" },
+      }
     },
 
     w = {
@@ -37,7 +41,7 @@ local mappings = {
         v = { ":vsp<cr>", "Vertical window" },
         s = { ":sp<cr>", "Horizontal window" },
         c = { ":q<cr>", "Close window" },
-        w = { "<C-w>w<cr>", "Next window" },
+        w = { "<C-w>w<cr>", "Switch window" },
     },
 
     l = {

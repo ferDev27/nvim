@@ -40,6 +40,7 @@ return packer.startup(function(use)
     -- Theme
     use ( { 'kyazdani42/nvim-web-devicons' } )
     use ( { 'navarasu/onedark.nvim' } )
+    use ( { 'marko-cerovac/material.nvim'} )
 
     -- Autopairs and Surround
     use ( { 'windwp/nvim-autopairs' } )
