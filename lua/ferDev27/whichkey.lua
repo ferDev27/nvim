@@ -4,6 +4,9 @@ if not status_ok then
 end
 
 local mappings = {
+    s = { ":w<CR>", "Save changes" },
+    q = { ":wq!<CR>", "Save and quit" },
+    Q = { ":q!<CR>", "Force quit" },
     b = {
     name = "Buffers",
         b = { ":Telescope buffers<cr>", "Show Buffers" },
