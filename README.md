@@ -54,7 +54,7 @@ You can check/edit the keybinds here:
 ```bash
 nvim ~/.config/nvim/lua/ferDev27/keys.lua
 ```
-Also by pressing the *leader key* (`,`) it will open which-key with some extra binds, you can check/edit here:
+Also by pressing the *space* ` ` it will open which-key with some extra binds, you can check/edit here:
 
 ```bash
 nvim ~/.config/nvim/lua/ferDev27/whichkey.lua

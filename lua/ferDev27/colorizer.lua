@@ -8,5 +8,6 @@ colorizer.setup ({
   'javascript'; 
   'html';
   'json';
+  'toml';
 }, { mode = 'background' })
 

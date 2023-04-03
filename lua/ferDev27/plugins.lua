@@ -39,8 +39,7 @@ return packer.startup(function(use)
 
     -- Theme
     use ( { 'kyazdani42/nvim-web-devicons' } )
-    use ( { 'navarasu/onedark.nvim' } )
-    use ( { 'marko-cerovac/material.nvim'} )
+    use ( { 'catppuccin/nvim'} )
 
     -- Autopairs and Surround
     use ( { 'windwp/nvim-autopairs' } )
@@ -57,7 +56,7 @@ return packer.startup(function(use)
     use ( { 'nvim-telescope/telescope-file-browser.nvim' } )
 
     -- Status Line
-    use ( { 'nvim-lualine/lualine.nvim' } )
+    use ( { 'feline-nvim/feline.nvim' } )
     
     -- Nvim Tree
     use ( { 'kyazdani42/nvim-tree.lua' } )
@@ -72,8 +71,6 @@ return packer.startup(function(use)
     use ( { 'hrsh7th/vim-vsnip' } )
     use ( { 'onsails/lspkind.nvim' } )
 
-    -- Snippets
-
     -- Colorizer
     use ( { 'norcalli/nvim-colorizer.lua' } )
 
@@ -82,9 +79,6 @@ return packer.startup(function(use)
 
     -- Terminal
     use ( { "akinsho/toggleterm.nvim" } )
-
-    -- Dashboard
-    use ( {'glepnir/dashboard-nvim' } )
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
