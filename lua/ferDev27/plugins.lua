@@ -40,6 +40,8 @@ return packer.startup(function(use)
     -- Theme
     use ( { 'kyazdani42/nvim-web-devicons' } )
     use ( { 'catppuccin/nvim'} )
+    use ( { 'folke/tokyonight.nvim'} )
+    use ( { 'marko-cerovac/material.nvim'} )
 
     -- Autopairs and Surround
     use ( { 'windwp/nvim-autopairs' } )

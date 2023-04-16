@@ -5,19 +5,19 @@ end
 
 local theme = {
   aqua = "#7AB0DF",
-  bg = "#1e1e2e",
-  blue = "#5FB0FC",
-  cyan = "#70C0BA",
+  bg = "#1a1b26",
+  blue = "#93bbff",
+  cyan = "#98e4ff",
   darkred = "#FB7373",
   fg = "#C7C7CA",
   gray = "#222730",
-  green = "#79DCAA",
+  green = "#cdea9f",
   lime = "#54CED6",
-  orange = "#FFD064",
+  orange = "#fb9f7f",
   pink = "#D997C8",
-  purple = "#C397D8",
-  red = "#F87070",
-  yellow = "#FFE59E"
+  purple = "#d3a7ee",
+  red = "#F07178",
+  yellow = "#ffd47e"
 }
 
 local mode_theme = {
@@ -174,6 +174,21 @@ component.lsp = {
   right_sep = "block",
 }
 
+component.file_info = {
+  provider = {
+    name = "file_info",
+    opts = {
+      filetype_icon = true,
+    },
+  },
+  hl = {
+    fg = "fg",
+    bg = "gray",
+  },
+  left_sep = "block",
+  right_sep = "block",
+}
+
 component.file_type = {
   provider = {
     name = "file_type",
@@ -275,7 +290,8 @@ local right = {
   component.diagnostic_hints,
   component.separator,
   component.scroll_bar,
-  component.lsp,
+  component.file_info,
+  --component.lsp,
 }
 
 local components = {

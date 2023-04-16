@@ -21,7 +21,7 @@ catppuccin.setup({
     no_bold = false, -- Force no bold
     styles = {
         comments = { "italic" },
-        conditionals = { "italic" },
+        conditionals = {},
         loops = {},
         functions = {},
         keywords = {},
