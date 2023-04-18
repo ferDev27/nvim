@@ -80,7 +80,10 @@ return packer.startup(function(use)
     use ( {'lewis6991/gitsigns.nvim'} )
 
     -- Terminal
-    use ( { "akinsho/toggleterm.nvim" } )
+    use ( { 'akinsho/toggleterm.nvim' } )
+
+    -- Dashboard
+    use ( { 'goolord/alpha-nvim', requires = 'nvim-tree/nvim-web-devicons', } )
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()

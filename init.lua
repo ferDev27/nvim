@@ -25,7 +25,7 @@ require 'ferDev27.lsp'
 ----------------------------
 
 -----------Theme------------
-require 'ferDev27.themes.material'
+require 'ferDev27.themes.tokyonight'
 ----------------------------
 
 --------Autocomplete--------
@@ -58,4 +58,8 @@ require 'ferDev27.colorizer'
 
 ---------KeyHelper----------
 require 'ferDev27.whichkey'
+----------------------------
+
+---------Dashboard----------
+require 'ferDev27.dashboard'
 ----------------------------
