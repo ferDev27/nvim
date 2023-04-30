@@ -15,6 +15,11 @@ local mappings = {
 		k = { ":bdelete!<cr>", "Kill Buffer" },
 	},
 
+	d = {
+		name = "Document",
+		f = { ":lua vim.lsp.buf.format()<cr>", "Format" },
+	},
+
 	f = {
 		name = "Telescope",
 		f = { ":Telescope find_files<cr>", "Find Files" },

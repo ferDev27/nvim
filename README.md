@@ -41,11 +41,15 @@ npm install -g prettier
 ```
 
 ```bash
+pip install black
+```
+
+```bash
 sudo pacman -S stylua
 ```
 
 ```bash
-pip install black
+npm install -g blade-formatter
 ```
 
 # Installation
