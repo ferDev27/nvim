@@ -7,59 +7,59 @@
 --    GitHub: https://github.com/ferDev27
 
 -----------Basic------------
-require 'ferDev27.options'
-require 'ferDev27.utils'
+require("ferDev27.options")
+require("ferDev27.utils")
 ----------------------------
 
 ----------Keymaps-----------
-require 'ferDev27.keys'
+require("ferDev27.keys")
 ----------------------------
 
 ---------Plugins-----------
-require 'ferDev27.plugins'
+require("ferDev27.plugins")
 ----------------------------
 
 -----Syntax/Intellisense----
-require 'ferDev27.treesitter'
-require 'ferDev27.lsp'
+require("ferDev27.treesitter")
+require("ferDev27.lsp")
 ----------------------------
 
 -----------Theme------------
-require 'ferDev27.themes.tokyonight'
+require("ferDev27.themes.tokyonight")
 ----------------------------
 
 --------Autocomplete--------
-require 'ferDev27.autopairs'
+require("ferDev27.autopairs")
 ----------------------------
 
 ---------Telescope----------
-require 'ferDev27.telescope'
+require("ferDev27.telescope")
 ----------------------------
 
 ---------StatusLine---------
-require 'ferDev27.statusline.feline-mo'
+require("ferDev27.statusline.feline-mo")
 ----------------------------
 
 ----------FileTree----------
-require 'ferDev27.nvimtree'
+require("ferDev27.nvimtree")
 ----------------------------
 
 ------------Git-------------
-require 'ferDev27.gitsigns'
+require("ferDev27.gitsigns")
 ----------------------------
 
 ----------Terminal----------
-require 'ferDev27.term'
+require("ferDev27.term")
 ----------------------------
 
 --------HexColorized--------
-require 'ferDev27.colorizer'
+require("ferDev27.colorizer")
 ----------------------------
 
 ---------KeyHelper----------
-require 'ferDev27.whichkey'
+require("ferDev27.whichkey")
 ----------------------------
 
 ---------Dashboard----------
-require 'ferDev27.dashboard'
+require("ferDev27.dashboard")
 ----------------------------

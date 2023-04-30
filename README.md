@@ -32,6 +32,16 @@ sudo pacman -S clang
 sudo pacman -S fd ripgrep
 ```
 
+<h2>Format</h2>
+
+```bash
+sudo npm install -g prettier
+```
+
+```bash
+sudo pacman -S stylua
+```
+
 # Installation
 You need to clone the repo:
 

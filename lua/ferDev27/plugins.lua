@@ -31,62 +31,64 @@ packer.init({
 })
 
 return packer.startup(function(use)
-    -- Packer
-    use ( { 'wbthomason/packer.nvim' } )
-    
-    -- Core
-    use ( { 'nvim-lua/plenary.nvim' } )
+	-- Packer
+	use({ "wbthomason/packer.nvim" })
 
-    -- Theme
-    use ( { 'kyazdani42/nvim-web-devicons' } )
-    use ( { 'catppuccin/nvim'} )
-    use ( { 'folke/tokyonight.nvim'} )
-    use ( { 'marko-cerovac/material.nvim'} )
+	-- Core
+	use({ "nvim-lua/plenary.nvim" })
 
-    -- Autopairs and Surround
-    use ( { 'windwp/nvim-autopairs' } )
-    use ( { 'tpope/vim-surround' } )
+	-- Theme
+	use({ "kyazdani42/nvim-web-devicons" })
+	use({ "catppuccin/nvim" })
+	use({ "folke/tokyonight.nvim" })
+	use({ "marko-cerovac/material.nvim" })
 
-    -- Treesitter
-    use ( { 'nvim-treesitter/nvim-treesitter' } )
+	-- Autopairs and Surround
+	use({ "windwp/nvim-autopairs" })
+	use({ "tpope/vim-surround" })
 
-    -- Key press helper
-    use ( { 'folke/which-key.nvim' } )
+	-- Treesitter
+	use({ "nvim-treesitter/nvim-treesitter" })
 
-    -- Telescope
-    use ( { 'nvim-telescope/telescope.nvim' } )
-    use ( { 'nvim-telescope/telescope-file-browser.nvim' } )
+	-- Key press helper
+	use({ "folke/which-key.nvim" })
 
-    -- Status Line
-    use ( { 'feline-nvim/feline.nvim' } )
-    
-    -- Nvim Tree
-    use ( { 'kyazdani42/nvim-tree.lua' } )
+	-- Telescope
+	use({ "nvim-telescope/telescope.nvim" })
+	use({ "nvim-telescope/telescope-file-browser.nvim" })
 
-    -- LSP / cmp
-    use ( { 'neovim/nvim-lspconfig' } )
-    use ( { 'hrsh7th/cmp-nvim-lsp' } )
-    use ( { 'hrsh7th/cmp-buffer' } )
-    use ( { 'hrsh7th/cmp-path' } )
-    use ( { 'hrsh7th/nvim-cmp' } )
-    use ( { 'hrsh7th/cmp-vsnip', after = 'nvim-cmp' } )
-    use ( { 'hrsh7th/vim-vsnip' } )
-    use ( { 'onsails/lspkind.nvim' } )
+	-- Status Line
+	use({ "feline-nvim/feline.nvim" })
 
-    -- Colorizer
-    use ( { 'norcalli/nvim-colorizer.lua' } )
+	-- Nvim Tree
+	use({ "kyazdani42/nvim-tree.lua" })
 
-    -- Git support
-    use ( {'lewis6991/gitsigns.nvim'} )
+	-- LSP / cmp
+	use({ "neovim/nvim-lspconfig" })
+	use({ "hrsh7th/cmp-nvim-lsp" })
+	use({ "hrsh7th/cmp-buffer" })
+	use({ "hrsh7th/cmp-path" })
+	use({ "hrsh7th/nvim-cmp" })
+	use({ "hrsh7th/cmp-vsnip", after = "nvim-cmp" })
+	use({ "hrsh7th/vim-vsnip" })
+	use({ "onsails/lspkind.nvim" })
 
-    -- Terminal
-    use ( { 'akinsho/toggleterm.nvim' } )
+	-- Null-ls
+	use({ "jose-elias-alvarez/null-ls.nvim" })
 
-    -- Dashboard
-    use ( { 'goolord/alpha-nvim', requires = 'nvim-tree/nvim-web-devicons', } )
+	-- Colorizer
+	use({ "norcalli/nvim-colorizer.lua" })
+
+	-- Git support
+	use({ "lewis6991/gitsigns.nvim" })
+
+	-- Terminal
+	use({ "akinsho/toggleterm.nvim" })
+
+	-- Dashboard
+	use({ "goolord/alpha-nvim", requires = "nvim-tree/nvim-web-devicons" })
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end
 end)
-

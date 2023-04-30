@@ -22,7 +22,7 @@ for _, server in ipairs(langservers) do
 end
 
 -- Python
-require('lspconfig').pylsp.setup{
+lspconfig.pylsp.setup{
   settings = {
     pylsp = {
       plugins = {
