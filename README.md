@@ -1,7 +1,9 @@
 # My Neovim configuration
+
 ![nvim1](./screenshots/nvim_1.png)
 
 # Dependencies
+
 In order to proceed we will need a few things
 
 # LSP (Language server protocol)
@@ -32,17 +34,22 @@ sudo pacman -S clang
 sudo pacman -S fd ripgrep
 ```
 
-<h2>Format</h2>
+<h2>Formatters</h2>
 
 ```bash
-sudo npm install -g prettier
+npm install -g prettier
 ```
 
 ```bash
 sudo pacman -S stylua
 ```
 
+```bash
+pip install black
+```
+
 # Installation
+
 You need to clone the repo:
 
 ```bash
@@ -51,6 +58,7 @@ git clone https://github.com/ferDev27/nvim.git
 ```
 
 Open init.lua
+
 ```bash
 cd ~/.config/nvim
 nvim init.lua
@@ -59,12 +67,14 @@ nvim init.lua
 **Wait for the installation to finish, and you are set**
 
 # Keybinds
+
 You can check/edit the keybinds here:
 
 ```bash
 nvim ~/.config/nvim/lua/ferDev27/keys.lua
 ```
-Also by pressing the *space* ` ` it will open which-key with some extra binds, you can check/edit here:
+
+Also by pressing the _space_ ` ` it will open which-key with some extra binds, you can check/edit here:
 
 ```bash
 nvim ~/.config/nvim/lua/ferDev27/whichkey.lua
