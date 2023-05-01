@@ -70,3 +70,5 @@ tokyonight.setup({
 
 -- setup must be called before loading
 vim.cmd.colorscheme "tokyonight"
+vim.cmd 'highlight ColorColumn guibg=#21252F'
+vim.cmd 'highlight CursorLine guibg=#181924'
