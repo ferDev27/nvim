@@ -30,13 +30,13 @@ dashboard.section.header.val = {
 
 -- Set menu
 dashboard.section.buttons.val = {
-	dashboard.button("r", "  Recent Files", ":Telescope oldfiles<CR>"),
-	dashboard.button("e", "  New File    ", ":enew<CR>"),
-	dashboard.button("f", "  Find File   ", ":Telescope find_files<CR>"),
-	dashboard.button("t", "  Find Word   ", ":Telescope live_grep<CR>"),
+	dashboard.button("r", "  Recent Files", ":Telescope oldfiles<CR>"),
+	dashboard.button("e", "  New File    ", ":enew<CR>"),
+	dashboard.button("f", "  Find File   ", ":Telescope find_files<CR>"),
+	dashboard.button("t", "󰈬  Find Word   ", ":Telescope live_grep<CR>"),
 	dashboard.button("b", "  File Browser", ":Telescope file_browser<CR>"),
 	dashboard.button("c", "  NVIM Config ", ":e ~/.config/nvim<CR>"),
-	dashboard.button("q", "﯇  Quit        ", ":qa<CR>"),
+	dashboard.button("q", "󰩈  Quit        ", ":qa<CR>"),
 }
 
 -- Set footer
