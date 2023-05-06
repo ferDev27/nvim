@@ -84,10 +84,10 @@ theme.setup({
         colors.backgrounds.sidebars = "#0f111a" 
         colors.backgrounds.floating_windows    = "#0f111a"
         colors.backgrounds.non_current_windows = "#131621"
-        colors.editor.selection = "#30334d"
+        colors.editor.selection = "#1f202d"
         colors.editor.title = "#C792EA"
-        colors.syntax.comments     = "#313347"
-        colors.editor.line_numbers = "#313347"
+        colors.syntax.comments     = "#35374d"
+        colors.editor.line_numbers = "#35374d"
     end   
 })
 
