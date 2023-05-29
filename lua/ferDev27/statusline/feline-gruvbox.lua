@@ -6,20 +6,20 @@ end
 local vi_mode_utils = require("feline.providers.vi_mode")
 
 local theme = {
-	aqua = "#7AB0DF",
-	bg = "#131621",
-	blue = "#93bbff",
-	cyan = "#98e4ff",
+	aqua = "#89B482",
+	bg = "#1d2021",
+	blue = "#7DAEA3",
+	cyan = "#7FAB7F",
 	darkred = "#FB7373",
-	fg = "#C7C7CA",
-	gray = "#191c2b",
-	green = "#cdea9f",
-	lime = "#54CED6",
-	orange = "#fb9f7f",
+	fg = "#CDB387",
+	gray = "#2F2D2D",
+	green = "#A9B665",
+	lime = "#9BAB64",
+	orange = "#E78A4E",
 	pink = "#D997C8",
-	purple = "#d3a7ee",
-	red = "#F07178",
-	yellow = "#ffd47e",
+	purple = "#C38096",
+	red = "#D86762",
+	yellow = "#D4834F",
 }
 
 local mode_theme = {

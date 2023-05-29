@@ -65,7 +65,7 @@ theme.setup({
     async_loading = true, -- Load parts of the theme asyncronously for faster startup (turned on by default)
 
     custom_highlights = {
-        CursorLine = { bg = "#0f1119" },
+        CursorLine = { bg = "#1c1d29" },
     },
 
     custom_colors = function(colors)
@@ -77,16 +77,16 @@ theme.setup({
 
         --Editor
         colors.editor.highlight    = "#31354a"
-        colors.editor.accent = "#7BC2BB"
+        colors.editor.accent = "#ECBFBD"
         --colors.editor.cursor = "#c0caf5"
-        colors.editor.bg = "#131621"
-        colors.editor.bg_alt = "#131621"
-        colors.backgrounds.sidebars = "#0f111a" 
-        colors.backgrounds.floating_windows    = "#0f111a"
-        colors.backgrounds.non_current_windows = "#131621"
-        colors.editor.selection = "#1f202d"
+        colors.editor.bg = "#181824"
+        colors.editor.bg_alt = "#181824"
+        colors.backgrounds.sidebars = "#111119" 
+        colors.backgrounds.floating_windows    = "#111119"
+        colors.backgrounds.non_current_windows = "#181824"
+        colors.editor.selection = "#33364f"
         colors.editor.title = "#C792EA"
-        colors.syntax.comments     = "#35374d"
+        colors.syntax.comments     = "#3f415c"
         colors.editor.line_numbers = "#35374d"
     end   
 })

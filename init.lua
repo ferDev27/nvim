@@ -25,7 +25,7 @@ require("ferDev27.lsp")
 ----------------------------
 
 -----------Theme------------
-require("ferDev27.themes.material")
+require("ferDev27.themes.catppuccin")
 ----------------------------
 
 --------Autocomplete--------
@@ -37,7 +37,7 @@ require("ferDev27.telescope")
 ----------------------------
 
 ---------StatusLine---------
-require("ferDev27.statusline.feline-mo")
+require("ferDev27.statusline.feline-catppuccin")
 ----------------------------
 
 ----------FileTree----------

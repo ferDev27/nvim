@@ -42,6 +42,7 @@ return packer.startup(function(use)
 	use({ "catppuccin/nvim" })
 	use({ "folke/tokyonight.nvim" })
 	use({ "marko-cerovac/material.nvim" })
+	use({ "sainnhe/gruvbox-material" })
 
 	-- Autopairs and Surround
 	use({ "windwp/nvim-autopairs" })
@@ -87,6 +88,20 @@ return packer.startup(function(use)
 
 	-- Dashboard
 	use({ "goolord/alpha-nvim", requires = "nvim-tree/nvim-web-devicons" })
+
+	--BBQ
+	use({
+		"utilyre/barbecue.nvim",
+		tag = "*",
+		requires = {
+			"SmiteshP/nvim-navic",
+			"nvim-tree/nvim-web-devicons", -- optional dependency
+		},
+		after = "nvim-web-devicons", -- keep this if you're using NvChad
+		config = function()
+			require("barbecue").setup()
+		end,
+	})
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
