@@ -89,7 +89,7 @@ return packer.startup(function(use)
 	-- Dashboard
 	use({ "goolord/alpha-nvim", requires = "nvim-tree/nvim-web-devicons" })
 
-	--BBQ
+	-- BBQ
 	use({
 		"utilyre/barbecue.nvim",
 		tag = "*",
@@ -100,6 +100,14 @@ return packer.startup(function(use)
 		after = "nvim-web-devicons", -- keep this if you're using NvChad
 		config = function()
 			require("barbecue").setup()
+		end,
+	})
+
+	-- Markdown preview
+	use({
+		"iamcco/markdown-preview.nvim",
+		run = function()
+			vim.fn["mkdp#util#install"]()
 		end,
 	})
 

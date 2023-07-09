@@ -20,6 +20,11 @@ local mappings = {
 		f = { ":lua vim.lsp.buf.format()<cr>", "Format" },
 	},
 
+	p = {
+		name = "Preview",
+		m = { ":MarkdownPreview<cr>", "Markdown" },
+	},
+
 	f = {
 		name = "Telescope",
 		f = { ":Telescope find_files<cr>", "Find Files" },

@@ -65,7 +65,7 @@ theme.setup({
     async_loading = true, -- Load parts of the theme asyncronously for faster startup (turned on by default)
 
     custom_highlights = {
-        CursorLine = { bg = "#1c1d29" },
+        CursorLine = { bg = "#282d38" },
     },
 
     custom_colors = function(colors)
@@ -77,20 +77,20 @@ theme.setup({
 
         --Editor
         colors.editor.highlight    = "#31354a"
-        colors.editor.accent = "#ECBFBD"
+        colors.editor.accent = "#6E91DE"
         --colors.editor.cursor = "#c0caf5"
-        colors.editor.bg = "#181824"
-        colors.editor.bg_alt = "#181824"
-        colors.backgrounds.sidebars = "#111119" 
-        colors.backgrounds.floating_windows    = "#111119"
-        colors.backgrounds.non_current_windows = "#181824"
-        colors.editor.selection = "#33364f"
+--        colors.editor.bg = "#181824"
+--        colors.editor.bg_alt = "#181824"
+--        colors.backgrounds.sidebars = "#111119" 
+--        colors.backgrounds.floating_windows    = "#111119"
+--        colors.backgrounds.non_current_windows = "#181824"
+        colors.editor.selection = "#2f3542"
         colors.editor.title = "#C792EA"
-        colors.syntax.comments     = "#3f415c"
+        colors.syntax.comments     = "#3e4759"
         colors.editor.line_numbers = "#35374d"
     end   
 })
 
 -- set colorscheme
 vim.cmd 'colorscheme material'
-vim.cmd 'highlight ColorColumn guibg=#212230'
+vim.cmd 'highlight ColorColumn guibg=#1D2129'
