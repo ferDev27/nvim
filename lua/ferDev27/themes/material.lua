@@ -87,7 +87,7 @@ theme.setup({
         colors.editor.selection = "#2f3542"
         colors.editor.title = "#C792EA"
         colors.syntax.comments     = "#3e4759"
-        colors.editor.line_numbers = "#35374d"
+        --colors.editor.line_numbers = "#35374d"
     end   
 })
 

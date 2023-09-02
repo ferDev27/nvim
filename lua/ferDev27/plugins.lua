@@ -40,7 +40,6 @@ return packer.startup(function(use)
 	-- Theme
 	use({ "nvim-tree/nvim-web-devicons" })
 	use({ "catppuccin/nvim" })
-	use({ "folke/tokyonight.nvim" })
 	use({ "marko-cerovac/material.nvim" })
 	use({ "sainnhe/gruvbox-material" })
 
@@ -59,7 +58,10 @@ return packer.startup(function(use)
 	use({ "nvim-telescope/telescope-file-browser.nvim" })
 
 	-- Status Line
-	use({ "feline-nvim/feline.nvim" })
+  use ({
+    'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  })
 
 	-- Nvim Tree
 	use({ "kyazdani42/nvim-tree.lua" })

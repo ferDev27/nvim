@@ -37,7 +37,7 @@ require("ferDev27.telescope")
 ----------------------------
 
 ---------StatusLine---------
-require("ferDev27.statusline.feline-tokyo")
+require("ferDev27.lualine")
 ----------------------------
 
 ----------FileTree----------
