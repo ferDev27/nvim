@@ -3,27 +3,27 @@ if not status_ok then
 	return
 end
 
-local config_status_ok, nvim_tree_config = pcall(require, "nvim-tree.config")
-if not config_status_ok then
-	return
-end
-
-local tree_cb = nvim_tree_config.nvim_tree_callback
-
+-- disable netrw at the very start of your init.lua
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
-vim.g.loaded_netrwSettings = 1
 
-nvim_tree.setup({
-	sort_by = "case_sensitive",
-	view = {
-		adaptive_size = true,
-    side = 'right',
-	},
-	renderer = {
-		group_empty = true,
-	},
-	filters = {
-		dotfiles = false,
-	},
+-- set termguicolors to enable highlight groups
+vim.opt.termguicolors = true
+
+-- empty setup using defaults
+nvim_tree.setup()
+
+-- OR setup with some options
+require("nvim-tree").setup({
+  sort_by = "case_sensitive",
+  view = {
+    width = 30,
+  },
+  renderer = {
+    group_empty = true,
+  },
+  filters = {
+    dotfiles = true,
+  },
 })
+

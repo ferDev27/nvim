@@ -42,6 +42,7 @@ return packer.startup(function(use)
 	use({ "catppuccin/nvim" })
 	use({ "marko-cerovac/material.nvim" })
 	use({ "sainnhe/gruvbox-material" })
+	use({ "navarasu/onedark.nvim" })
 
 	-- Autopairs and Surround
 	use({ "windwp/nvim-autopairs" })
@@ -64,7 +65,7 @@ return packer.startup(function(use)
   })
 
 	-- Nvim Tree
-	use({ "kyazdani42/nvim-tree.lua" })
+	use({ "nvim-tree/nvim-tree.lua" })
 
 	-- LSP / cmp
 	use({ "neovim/nvim-lspconfig" })

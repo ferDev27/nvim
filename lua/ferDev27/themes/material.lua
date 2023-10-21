@@ -20,7 +20,7 @@ theme.setup({
     styles = { -- Give comments style such as bold, italic, underline etc.
         comments = { italic = true },
         strings = {},
-        keywords = {},
+        keywords = { italic = true },
         functions = {},
         variables = {},
         operators = {},
@@ -48,7 +48,7 @@ theme.setup({
     },
 
     disable = {
-        colored_cursor = true, -- Disable the colored cursor
+        colored_cursor = false, -- Disable the colored cursor
         borders = false, -- Disable borders between verticaly split windows
         background = true, -- Prevent the theme from setting the background (NeoVim then uses your terminal background)
         term_colors = false, -- Prevent the theme from setting terminal colors
@@ -78,7 +78,7 @@ theme.setup({
         --Editor
         colors.editor.highlight    = "#31354a"
         colors.editor.accent = "#6E91DE"
-        --colors.editor.cursor = "#c0caf5"
+        colors.editor.cursor = "#e0af68"
 --        colors.editor.bg = "#181824"
 --        colors.editor.bg_alt = "#181824"
 --        colors.backgrounds.sidebars = "#111119" 
