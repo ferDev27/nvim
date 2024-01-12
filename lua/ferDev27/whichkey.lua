@@ -44,7 +44,7 @@ local mappings = {
 		t = {
 			name = "Terminal",
 			t = { ":term<cr>", "Terminal" },
-			s = { ":ToggleTerm<cr>", "Vertical Split Terminal" },
+			v = { ":ToggleTerm<cr>", "Vertical Split Terminal" },
 			f = { ":ToggleTerm direction=float<cr>", "Floating Terminal" },
 		},
 	},

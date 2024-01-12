@@ -79,7 +79,7 @@ theme.setup({
         --Editor
         colors.editor.highlight    = "#31354a"
         colors.editor.accent = "#6E91DE"
-        colors.editor.cursor = "#e0af68"
+        colors.editor.cursor = "#C778DD"
 --        colors.editor.bg = "#181824"
 --        colors.editor.bg_alt = "#181824"
 --        colors.backgrounds.sidebars = "#111119" 
