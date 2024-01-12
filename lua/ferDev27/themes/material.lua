@@ -65,7 +65,8 @@ theme.setup({
     async_loading = true, -- Load parts of the theme asyncronously for faster startup (turned on by default)
 
     custom_highlights = {
-        CursorLine = { bg = "#282d38" },
+        --CursorLine = { bg = "#2a2a36" },
+        CursorLine = { bg = "#191d24" },
     },
 
     custom_colors = function(colors)
@@ -93,4 +94,5 @@ theme.setup({
 
 -- set colorscheme
 vim.cmd 'colorscheme material'
+--vim.cmd 'highlight ColorColumn guibg=#282d38'
 vim.cmd 'highlight ColorColumn guibg=#1D2129'
