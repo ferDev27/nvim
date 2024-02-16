@@ -21,7 +21,11 @@ npm install -g intelephense
 ```
 
 ```bash
-pip install "python-lsp-server[all]"
+sudo pacman -S python-lsp-server
+```
+
+```bash
+sudo pacman -S rust-analyzer
 ```
 
 ```bash
@@ -41,15 +45,11 @@ npm install -g prettier
 ```
 
 ```bash
-pip install black
+sudo pacman -S python-black
 ```
 
 ```bash
 sudo pacman -S stylua
-```
-
-```bash
-npm install -g blade-formatter
 ```
 
 # Installation
@@ -78,7 +78,7 @@ You can check/edit the keybinds here:
 nvim ~/.config/nvim/lua/ferDev27/keys.lua
 ```
 
-Also by pressing the _space_ ` ` it will open which-key with some extra binds, you can check/edit here:
+Also by pressing the _space_ it will open which-key with some extra binds, you can check/edit here:
 
 ```bash
 nvim ~/.config/nvim/lua/ferDev27/whichkey.lua
