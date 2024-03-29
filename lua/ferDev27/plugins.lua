@@ -39,9 +39,6 @@ return packer.startup(function(use)
 
 	-- Theme
 	use({ "nvim-tree/nvim-web-devicons" })
-	use({ "catppuccin/nvim" })
-	use({ "marko-cerovac/material.nvim" })
-	use({ "sainnhe/gruvbox-material" })
 	use({ "navarasu/onedark.nvim" })
 
 	-- Autopairs and Surround
@@ -98,9 +95,9 @@ return packer.startup(function(use)
 		tag = "*",
 		requires = {
 			"SmiteshP/nvim-navic",
-			"nvim-tree/nvim-web-devicons", -- optional dependency
+			"nvim-tree/nvim-web-devicons", 
 		},
-		after = "nvim-web-devicons", -- keep this if you're using NvChad
+		after = "nvim-web-devicons",
 		config = function()
 			require("barbecue").setup()
 		end,

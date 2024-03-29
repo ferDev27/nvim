@@ -25,7 +25,7 @@ require("ferDev27.lsp")
 ----------------------------
 
 -----------Theme------------
-require("ferDev27.themes.material")
+require("ferDev27.themes.wavedark")
 ----------------------------
 
 --------Autocomplete--------

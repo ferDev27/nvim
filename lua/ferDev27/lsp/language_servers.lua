@@ -11,7 +11,6 @@ local langservers = {
     'cssls',
     'tsserver',
     'jsonls',
-    'intelephense',
     'clangd'
 }
 
