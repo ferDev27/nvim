@@ -20,8 +20,13 @@ configs.setup({
 		"vim",
 		"haskell",
 	},
-	highlight = { enable = true, disable = { "css" } },
+
+  highlight = {
+    enable = true,
+    use_languagetree = true,
+  },
+
+  indent = { enable = true },
 	autotag = { enable = true },
 	autopairs = { enable = true },
-	indent = { enable = true, disable = { "python", "css" } },
 })

@@ -65,7 +65,7 @@ return packer.startup(function(use)
 	use({ "nvim-tree/nvim-tree.lua" })
 
 	-- LSP / cmp
-	use({ 
+	use({
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
     "neovim/nvim-lspconfig"
@@ -79,7 +79,7 @@ return packer.startup(function(use)
 	use({ "onsails/lspkind.nvim" })
 
 	-- Null-ls
-	use({ "jose-elias-alvarez/null-ls.nvim" })
+	use({ "nvimtools/none-ls.nvim" })
 
 	-- Colorizer
 	use({ "norcalli/nvim-colorizer.lua" })
