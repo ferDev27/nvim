@@ -39,7 +39,7 @@ return packer.startup(function(use)
 
 	-- Theme
 	use({ "nvim-tree/nvim-web-devicons" })
-	use({ "navarasu/onedark.nvim" })
+	use({ "folke/tokyonight.nvim" })
 
 	-- Autopairs and Surround
 	use({ "windwp/nvim-autopairs" })
@@ -65,7 +65,11 @@ return packer.startup(function(use)
 	use({ "nvim-tree/nvim-tree.lua" })
 
 	-- LSP / cmp
-	use({ "neovim/nvim-lspconfig" })
+	use({ 
+    "williamboman/mason.nvim",
+    "williamboman/mason-lspconfig.nvim",
+    "neovim/nvim-lspconfig"
+  })
 	use({ "hrsh7th/cmp-nvim-lsp" })
 	use({ "hrsh7th/cmp-buffer" })
 	use({ "hrsh7th/cmp-path" })

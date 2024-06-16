@@ -8,48 +8,17 @@ In order to proceed we will need a few things
 
 # LSP (Language server protocol)
 
-```bash
-npm i -g vscode-langservers-extracted
-```
+Use leader + m + m to launch mason and manage language servers, formatters, etc
 
-```bash
-npm install -g typescript typescript-language-server
-```
+By default it install lua_ls, tsserver and pylsp
 
-```bash
-npm install -g intelephense
-```
-
-```bash
-sudo pacman -S python-lsp-server
-```
-
-```bash
-sudo pacman -S rust-analyzer
-```
-
-```bash
-sudo pacman -S clang
-```
+Formatters set with null-ls are stylua, prettier and black. Although they need 
+to be installed
 
 <h2>Telescope</h2>
 
 ```bash
 sudo pacman -S fd ripgrep
-```
-
-<h2>Formatters</h2>
-
-```bash
-npm install -g prettier
-```
-
-```bash
-sudo pacman -S python-black
-```
-
-```bash
-sudo pacman -S stylua
 ```
 
 # Installation

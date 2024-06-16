@@ -72,6 +72,13 @@ local mappings = {
 		e = { "<cmd>lua vim.diagnostic.open_float()<CR>", "Show line diagnostics" },
 		q = { "<cmd>lua vim.diagnostic.setloclist()<CR>", "Show loclist" },
 	},
+
+	m = {
+		name = "Mason",
+		m = { ":Mason<CR>", "Main menu" },
+		u = { ":MasonUpdate<CR>", "Update mason" }
+	},
+
 }
 
 local opts = { prefix = "<leader>" }

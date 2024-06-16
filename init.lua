@@ -25,7 +25,7 @@ require("ferDev27.lsp")
 ----------------------------
 
 -----------Theme------------
-require("ferDev27.themes.wavedark")
+require("ferDev27.themes.tokyonight")
 ----------------------------
 
 --------Autocomplete--------
