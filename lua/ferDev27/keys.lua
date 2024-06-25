@@ -24,3 +24,8 @@ map("x", "J", ":move '>+1<CR>gv-gv", options)
 -- Terminal
 map("t", "<ESC><ESC>", "<C-d>", term_opt)
 map("t", "<ESC>", "<C-\\><C-N>", term_opt)
+
+-- Debugger
+map("n", "<F5>", ":DapContinue<CR>", options)
+map("n", "<F10>", ":DapStepOver<CR>", options)
+map("n", "<F11>", ":DapStepInto<CR>", options)

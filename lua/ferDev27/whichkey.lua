@@ -15,8 +15,8 @@ local mappings = {
 		k = { ":bdelete!<cr>", "Kill Buffer" },
 	},
 
-	d = {
-		name = "Document",
+	n = {
+		name = "Null-ls",
 		f = { ":lua vim.lsp.buf.format()<cr>", "Format" },
 	},
 
@@ -76,9 +76,18 @@ local mappings = {
 	m = {
 		name = "Mason",
 		m = { ":Mason<CR>", "Main menu" },
-		u = { ":MasonUpdate<CR>", "Update mason" }
+		u = { ":MasonUpdate<CR>", "Update mason" },
 	},
 
+	d = {
+		name = "Debug",
+		c = { ":DapContinue<CR>", "Continue" },
+		b = { ":DapToggleBreakpoint<CR>", "Toggle breakpoint" },
+		o = { ":DapStepOver<CR>", "Step over" },
+		i = { ":DapStepInto<CR>", "Step into" },
+		r = { ":DapToggleRepl<CR>", "Open builtin REPL" },
+		x = { ":DapTerminate<CR>", "Terminate" },
+	},
 }
 
 local opts = { prefix = "<leader>" }

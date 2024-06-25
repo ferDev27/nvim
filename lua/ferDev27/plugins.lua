@@ -78,6 +78,15 @@ return packer.startup(function(use)
 	use({ "hrsh7th/vim-vsnip" })
 	use({ "onsails/lspkind.nvim" })
 
+  -- Debug DAP
+	use({ "mfussenegger/nvim-dap" })
+	use({
+    "rcarriga/nvim-dap-ui",
+    requires = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"}
+  })
+
+  -- DAP .Net
+
 	-- Null-ls
 	use({ "nvimtools/none-ls.nvim" })
 

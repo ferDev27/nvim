@@ -24,6 +24,10 @@ require("ferDev27.treesitter")
 require("ferDev27.lsp")
 ----------------------------
 
+-----------Debug------------
+require("ferDev27.dap")
+----------------------------
+
 -----------Theme------------
 require("ferDev27.themes.tokyonight")
 ----------------------------
