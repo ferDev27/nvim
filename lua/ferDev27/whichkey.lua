@@ -34,9 +34,9 @@ local mappings = {
 	},
 
 	t = {
-		name = "Nvim Tree",
-		t = { ":NvimTreeToggle<CR>", "Toggle Nvim Tree" },
-		f = { ":NvimTreeFindFile<CR>", "Find File Nvim Tree" },
+		name = "Neotree",
+		t = { ":Neotree toggle<CR>", "Toggle Neotree" },
+		b = { ":Neotree toggle buffers<CR>", "Buffers Neotree" },
 	},
 
 	o = {

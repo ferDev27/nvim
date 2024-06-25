@@ -61,8 +61,16 @@ return packer.startup(function(use)
 		requires = { "nvim-tree/nvim-web-devicons", opt = true },
 	})
 
-	-- Nvim Tree
-	use({ "nvim-tree/nvim-tree.lua" })
+	-- Neotree
+	use({
+		"nvim-neo-tree/neo-tree.nvim",
+		branch = "v3.x",
+		requires = {
+			"nvim-lua/plenary.nvim",
+			"nvim-tree/nvim-web-devicons",
+			"MunifTanjim/nui.nvim",
+		},
+	})
 
 	-- LSP / cmp
 	use({
@@ -84,8 +92,6 @@ return packer.startup(function(use)
 		"rcarriga/nvim-dap-ui",
 		requires = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" },
 	})
-
-	-- DAP .Net
 
 	-- Null-ls
 	use({ "nvimtools/none-ls.nvim" })

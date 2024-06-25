@@ -45,7 +45,7 @@ require("ferDev27.statusline")
 ----------------------------
 
 ----------FileTree----------
-require("ferDev27.nvimtree")
+require("ferDev27.neotree")
 ----------------------------
 
 ------------Git-------------
