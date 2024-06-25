@@ -56,20 +56,20 @@ return packer.startup(function(use)
 	use({ "nvim-telescope/telescope-file-browser.nvim" })
 
 	-- Status Line
-  use ({
-    'nvim-lualine/lualine.nvim',
-    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-  })
+	use({
+		"nvim-lualine/lualine.nvim",
+		requires = { "nvim-tree/nvim-web-devicons", opt = true },
+	})
 
 	-- Nvim Tree
 	use({ "nvim-tree/nvim-tree.lua" })
 
 	-- LSP / cmp
 	use({
-    "williamboman/mason.nvim",
-    "williamboman/mason-lspconfig.nvim",
-    "neovim/nvim-lspconfig"
-  })
+		"williamboman/mason.nvim",
+		"williamboman/mason-lspconfig.nvim",
+		"neovim/nvim-lspconfig",
+	})
 	use({ "hrsh7th/cmp-nvim-lsp" })
 	use({ "hrsh7th/cmp-buffer" })
 	use({ "hrsh7th/cmp-path" })
@@ -78,14 +78,14 @@ return packer.startup(function(use)
 	use({ "hrsh7th/vim-vsnip" })
 	use({ "onsails/lspkind.nvim" })
 
-  -- Debug DAP
+	-- Debug DAP
 	use({ "mfussenegger/nvim-dap" })
 	use({
-    "rcarriga/nvim-dap-ui",
-    requires = {"mfussenegger/nvim-dap", "nvim-neotest/nvim-nio"}
-  })
+		"rcarriga/nvim-dap-ui",
+		requires = { "mfussenegger/nvim-dap", "nvim-neotest/nvim-nio" },
+	})
 
-  -- DAP .Net
+	-- DAP .Net
 
 	-- Null-ls
 	use({ "nvimtools/none-ls.nvim" })
@@ -108,7 +108,7 @@ return packer.startup(function(use)
 		tag = "*",
 		requires = {
 			"SmiteshP/nvim-navic",
-			"nvim-tree/nvim-web-devicons", 
+			"nvim-tree/nvim-web-devicons",
 		},
 		after = "nvim-web-devicons",
 		config = function()
